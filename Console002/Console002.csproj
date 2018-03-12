@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3C3DA5D-2518-4895-80EF-57B6C3E9B298}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Console002</RootNamespace>
+    <AssemblyName>Console002</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201803120042571_NewStuff.cs" />
+    <Compile Include="Migrations\201803120042571_NewStuff.Designer.cs">
+      <DependentUpon>201803120042571_NewStuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803120044385_NewStuff2.cs" />
+    <Compile Include="Migrations\201803120044385_NewStuff2.Designer.cs">
+      <DependentUpon>201803120044385_NewStuff2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803120108236_Third.cs" />
+    <Compile Include="Migrations\201803120108236_Third.Designer.cs">
+      <DependentUpon>201803120108236_Third.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803120109285_NewTry.cs" />
+    <Compile Include="Migrations\201803120109285_NewTry.Designer.cs">
+      <DependentUpon>201803120109285_NewTry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803120110303_Test.cs" />
+    <Compile Include="Migrations\201803120110303_Test.Designer.cs">
+      <DependentUpon>201803120110303_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803120111089_NewThigns.cs" />
+    <Compile Include="Migrations\201803120111089_NewThigns.Designer.cs">
+      <DependentUpon>201803120111089_NewThigns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803120113006_Clubs.cs" />
+    <Compile Include="Migrations\201803120113006_Clubs.Designer.cs">
+      <DependentUpon>201803120113006_Clubs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201803120042571_NewStuff.resx">
+      <DependentUpon>201803120042571_NewStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120044385_NewStuff2.resx">
+      <DependentUpon>201803120044385_NewStuff2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120108236_Third.resx">
+      <DependentUpon>201803120108236_Third.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120109285_NewTry.resx">
+      <DependentUpon>201803120109285_NewTry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120110303_Test.resx">
+      <DependentUpon>201803120110303_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120111089_NewThigns.resx">
+      <DependentUpon>201803120111089_NewThigns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120113006_Clubs.resx">
+      <DependentUpon>201803120113006_Clubs.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
